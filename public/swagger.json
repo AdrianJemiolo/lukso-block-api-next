@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "LUKSO Block API",
+      "version": "1.0.0",
+      "description": "API for fetching the latest block number from LUKSO Testnet."
+    },
+    "paths": {
+      "/health": {
+        "get": {
+          "summary": "Check API health",
+          "responses": {
+            "200": {
+              "description": "API is up and running"
+            }
+          }
+        }
+      },
+      "/block-number": {
+        "get": {
+          "summary": "Get latest block number",
+          "responses": {
+            "200": {
+              "description": "The latest block number"
+            }
+          }
+        }
+      }
+    }
+  }
+  
